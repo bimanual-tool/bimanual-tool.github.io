@@ -102,61 +102,45 @@
         <div class="border border-gray-200 rounded-lg p-6">
           <h3 class="font-semibold text-gray-900 mb-3">1. Hand–Tool–Object Representations</h3>
           <p class="text-sm text-gray-600 leading-relaxed">
-            What representations make the evolving relationship between hands, fingers, tools,
-            objects, contacts, and forces learnable and transferable — graphs, object-centric
-            states, 3D geometry, tactile/force features, language-conditioned abstractions, or
-            hybrids?
-          </p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-6">
-          <h3 class="font-semibold text-gray-900 mb-3">2. Bimanual Coordination</h3>
-          <p class="text-sm text-gray-600 leading-relaxed">
-            Many tool-use tasks require one hand to stabilize, guide, regrasp, or constrain while the
-            other manipulates. How should robots learn role assignment, hand switching,
+            Tool use requires representing the evolving relationship between hands, fingers, tools, target objects, contacts, and forces.  
+            Many useful tasks further require one hand to stabilize, guide, regrasp, or constrain while the other manipulates the tool. 
+            What representations make this structure learnable and transferable, and how should robots learn role assignment, hand switching, 
             synchronization, and recovery in long-horizon bimanual tool use?
           </p>
         </div>
         <div class="border border-gray-200 rounded-lg p-6">
-          <h3 class="font-semibold text-gray-900 mb-3">3. Contact-Rich Execution</h3>
+          <h3 class="font-semibold text-gray-900 mb-3">2. Low-level contact-rich tool-use execution and control</h3>
           <p class="text-sm text-gray-600 leading-relaxed">
-            How can robots execute tool-use skills at real-time speed while maintaining stable
-            contact under uncertainty in force, friction, compliance, deformation, and object
-            motion? Which parts can be learned from data, and which still require explicit planning,
-            feedback control, or physics-based constraints?
+          How can robots execute tool-use skills at real-time speed while maintaining stable contact under uncertainty in force, 
+          friction, compliance, deformation, and object motion? Which parts of tool use can be learned directly from data, 
+          and which parts still require explicit planning, feedback control, tactile/force sensing, or physics-based constraints to achieve stable real-world execution?
           </p>
         </div>
         <div class="border border-gray-200 rounded-lg p-6">
-          <h3 class="font-semibold text-gray-900 mb-3">4. Generalizable Tool-Use Reasoning</h3>
+          <h3 class="font-semibold text-gray-900 mb-3">3. Multisensory Perception and Feedback for Tool Use</h3>
           <p class="text-sm text-gray-600 leading-relaxed">
-            How can world models, video prediction, VLA policies, and language-conditioned planners
-            infer tool affordances, predict physical effects, and generalize across unseen tools,
-            objects, and tasks? Where do they fail when success depends on precise contact rather
-            than semantics alone?
+          Vision alone is often insufficient for tool use because contacts may be occluded, force thresholds may be subtle, 
+          and failure can depend on slip, pressure or deformation. What sensing and hardware capabilities are needed for robust tool-mediated interaction 
+          (e.g., vision, touch, force, proprioception, audio, tactile-enabled hands, and teleoperation interfaces)? 
+          How should these signals be fused and exposed to policies, controllers, and VLA/world-model systems at the latency and reliability required for real-time tool use?
           </p>
         </div>
         <div class="border border-gray-200 rounded-lg p-6">
-          <h3 class="font-semibold text-gray-900 mb-3">5. Bridging Intent and Dexterity</h3>
+          <h3 class="font-semibold text-gray-900 mb-3">4. Data, Embodiment Transfer, and Evaluation.</h3>
           <p class="text-sm text-gray-600 leading-relaxed">
-            What is a meaningful interface between generalist models and dexterous controllers?
-            Should high-level systems provide future-state targets, keyframes, contact plans,
-            affordance maps, language plans, object-centric goals, or learned latent actions?
-          </p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-6">
-          <h3 class="font-semibold text-gray-900 mb-3">6. Data &amp; Embodiment Transfer</h3>
-          <p class="text-sm text-gray-600 leading-relaxed">
-            How can robots learn tool use from human videos, teleoperation, motion capture, tactile
-            demonstrations, simulation, and self-practice despite differences in morphology, sensing,
-            compliance, and control frequency? What transfers, and what must be relearned?
+          How can robots learn tool use from human videos, motion capture, teleoperation, tactile demonstrations, simulation, 
+          and robot self-practice despite differences in morphology, sensing, compliance, and control frequency? 
+          What benchmarks and metrics should evaluate not only task success, but also contact stability, force regulation, robustness, generalization, 
+          and real-world transfer?
           </p>
         </div>
         <div class="border border-gray-200 rounded-lg p-6 md:col-span-2">
-          <h3 class="font-semibold text-gray-900 mb-3">7. Evaluation for Bimanual Dexterous Tool Use</h3>
+          <h3 class="font-semibold text-gray-900 mb-3">5. High-level Generalizable Tool-Use Reasoning.</h3>
           <p class="text-sm text-gray-600 leading-relaxed">
-            Binary task success can hide brittle contact, unsafe forces, unrealistic behavior, or
-            poor generalization. What metrics and benchmarks should capture contact stability,
-            physical plausibility, execution speed, force regulation, robustness, tool/object
-            generalization, and real-world transfer?
+            How can world models, video prediction, VLA policies, and language-conditioned planners infer tool affordances, 
+            predict future physical effects, and generalize across unseen tools, objects, and tasks? 
+            Where do these high-level models fail when success depends on precise contact rather than semantic understanding alone? 
+            How can their predictions or planning be fast, physically-grounded, and actionable enough under real-time contact uncertainty?
           </p>
         </div>
       </div>
@@ -175,6 +159,7 @@
                class="w-28 h-28 rounded-full mx-auto mb-3 object-cover" />
           <a href="https://ankurhanda.github.io/" class="font-semibold text-gray-900 text-sm hover:text-navy hover:underline" target="_blank">Ankur Handa</a>
           <p class="text-sm text-gray-500">NVIDIA Robotics</p>
+          <p class="text-sm text-gray-500">Principal Research Scientist</p>
         </div>
 
         <div class="text-center">
@@ -183,6 +168,7 @@
                class="w-28 h-28 rounded-full mx-auto mb-3 object-cover" />
           <a href="https://profiles.stanford.edu/c-karen-liu" class="font-semibold text-gray-900 text-sm hover:text-navy hover:underline" target="_blank">Karen Liu</a>
           <p class="text-sm text-gray-500">Stanford</p>
+          <p class="text-sm text-gray-500">Professor</p>
         </div>
 
         <div class="text-center">
@@ -191,6 +177,7 @@
                class="w-28 h-28 rounded-full mx-auto mb-3 object-cover" />
           <a href="https://www.linkedin.com/in/yunfang-yang-73287178/" class="font-semibold text-gray-900 text-sm hover:text-navy hover:underline" target="_blank">Yunfang Yang</a>
           <p class="text-sm text-gray-500">Sharpa</p>
+          <p class="text-sm text-gray-500">Head of US</p>
         </div>
 
         <div class="text-center">
@@ -199,11 +186,13 @@
                class="w-28 h-28 rounded-full mx-auto mb-3 object-cover" />
           <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/malik.html" class="font-semibold text-gray-900 text-sm hover:text-navy hover:underline" target="_blank">Jitendra Malik</a>
           <p class="text-sm text-gray-500">UC Berkeley</p>
+          <p class="text-sm text-gray-500">Professor</p>
         </div>
-
+      
+      <!--
       </div>
       <p class="text-center text-sm text-gray-400 mt-8">Additional speakers to be announced.</p>
-    </div>
+      </div>-->
   </section>
 
   <!-- SCHEDULE -->
