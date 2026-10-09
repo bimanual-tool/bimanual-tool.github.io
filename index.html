@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bimanual Dexterous Tool Use — CoRL 2026 Workshop</title>
+  <meta name="description" content="Last call for BiDexTool at CoRL 2026. Submission deadline extended to Monday, October 12, 2026. $1,000 in Best Paper Awards, supported by Sharpa and SOMA Robotics." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -19,6 +20,10 @@
   </script>
   <style>
     html { scroll-behavior: smooth; }
+    section[id] { scroll-margin-top: 100px; }
+    .sponsor-logo { width: 220px; height: 62px; object-fit: contain; max-width: 100%; }
+    .deadline-banner { border: 1px solid #bfdbfe; background: #eff6ff; border-radius: 12px; padding: 20px; margin: 0 0 32px; }
+    .deadline-banner strong { color: #1e3a8a; }
   </style>
 </head>
 <body class="font-sans text-gray-800 bg-white">
@@ -33,6 +38,8 @@
         <a href="#speakers" class="hover:text-navy transition-colors">Speakers</a>
         <a href="#schedule" class="hover:text-navy transition-colors">Schedule</a>
         <a href="#cfp" class="hover:text-navy transition-colors">CFP</a>
+        <a href="#awards" class="hover:text-navy transition-colors">Awards</a>
+        <a href="#sponsors" class="hover:text-navy transition-colors">Sponsors</a>
         <a href="#organizers" class="hover:text-navy transition-colors">Organizers</a>
         <a href="#cfp" class="ml-2 px-3 py-1.5 rounded border border-navy text-navy hover:bg-navy hover:text-white transition-colors">Submit</a>
       </div>
@@ -50,6 +57,11 @@
         From Contact-Rich Execution to Generalist Robot Intelligence
       </p>
       <p class="text-base text-gray-400 mb-8">Austin, Texas, USA &bull; November 12 2026</p>
+      <div class="deadline-banner">
+        <p class="text-sm font-semibold uppercase tracking-widest text-navy mb-2">Last call · Deadline extended</p>
+        <p class="text-xl md:text-2xl font-bold text-gray-900">Submit by <time datetime="2026-10-12">Monday, October 12, 2026</time></p>
+        <p class="text-sm text-gray-600 mt-2">Papers &amp; demos · <a href="#awards" class="font-semibold text-navy underline">$1,000 in Best Paper Awards</a></p>
+      </div>
       <div class="flex justify-center gap-4 flex-wrap">
         <a href="#cfp" class="px-6 py-3 rounded border-2 border-navy text-navy font-semibold hover:bg-navy hover:text-white transition-colors">
           Call for Papers
@@ -172,7 +184,7 @@
         </div>
 
         <div class="text-center">
-          <img src="https://i1.rgstatic.net/ii/profile.image/915650922938368-1595319600150_Q512/Yunfang-Yang.jpg"
+          <img src="assets/people/speaker-yunfang.jpg"
                alt="Yunfang Yang"
                class="w-28 h-28 rounded-full mx-auto mb-3 object-cover" />
           <a href="https://yunfangyang.weebly.com/" class="font-semibold text-gray-900 text-sm hover:text-navy hover:underline" target="_blank">Yunfang Yang</a>
@@ -189,10 +201,8 @@
           <p class="text-sm text-gray-500">Professor</p>
         </div>
       
-      <!--
       </div>
-      <p class="text-center text-sm text-gray-400 mt-8">Additional speakers to be announced.</p>
-      </div>-->
+    </div>
   </section>
 
   <!-- SCHEDULE -->
@@ -258,17 +268,13 @@
         and a short video showing the proposed demonstration. At least one author of each accepted demo must attend the workshop in 
         person and present the system live.
       </p>
-      
-      
-      
-      </p>
       <div class="bg-white rounded-lg border border-gray-200 p-6 mb-8">
         <h3 class="font-semibold text-gray-900 mb-3">Important Dates</h3>
         <ul class="text-sm text-gray-600 space-y-2">
-          <li><span class="font-medium text-gray-800">Submission deadline:</span> 10/9/2026</li>
-          <li><span class="font-medium text-gray-800">Notification:</span> 10/18/2026</li>
-          <li><span class="font-medium text-gray-800">Camera-ready:</span> 10/25/2026</li>
-          <li><span class="font-medium text-gray-800">Workshop:</span> CoRL 2026, Austin, United States</li>
+          <li><span class="font-medium text-gray-800">Submission deadline extended:</span> <del class="text-gray-400">October 9</del> &rarr; <strong class="text-navy"><time datetime="2026-10-12">Monday, October 12, 2026</time></strong></li>
+          <li><span class="font-medium text-gray-800">Notification:</span> <time datetime="2026-10-18">October 18, 2026</time></li>
+          <li><span class="font-medium text-gray-800">Camera-ready:</span> <time datetime="2026-10-25">October 25, 2026</time></li>
+          <li><span class="font-medium text-gray-800">Workshop:</span> <time datetime="2026-11-12">November 12, 2026</time> · CoRL 2026, Austin, United States</li>
         </ul>
       </div>
       <a href="https://openreview.net/group?id=robot-learning.org/CoRL/2026/Workshop/BiDexTool#tab-your-consoles" class="inline-block px-6 py-3 rounded border-2 border-navy text-navy font-semibold hover:bg-navy hover:text-white transition-colors">
@@ -278,7 +284,7 @@
   </section>
 
   <!-- CALL FOR PANEL QUESTIONS -->
-  <section id="cfp" class="bg-gray-50 py-16 px-4">
+  <section id="panel-questions" class="bg-gray-50 py-16 px-4">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-2xl font-bold text-navy mb-6">Call for Panel Questions</h2>
       <p class="text-gray-700 leading-relaxed mb-6">
@@ -295,10 +301,50 @@
       and may also be used to organize broader themes for the panel discussion.
       Panel question submission deadline: November 10, 2026
       </p>
-      </p>
       <a href="https://forms.gle/Vp1qQ4mVH7ETR9Ei9" class="inline-block px-6 py-3 rounded border-2 border-navy text-navy font-semibold hover:bg-navy hover:text-white transition-colors">
         Submit a panel question
       </a>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards" class="bg-white py-16 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-navy mb-4">Best Paper Awards</h2>
+      <p class="text-gray-600 mb-8">$1,000 in paper awards, made possible by our sponsors, Sharpa and SOMA Robotics.</p>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="rounded-lg border border-blue-200 bg-blue-50 p-6">
+          <p class="font-semibold text-navy mb-2">1st Prize</p>
+          <p class="text-4xl font-bold text-gray-900">$500</p>
+        </div>
+        <div class="rounded-lg border border-gray-200 bg-gray-50 p-6">
+          <p class="font-semibold text-navy mb-2">2nd Prize</p>
+          <p class="text-4xl font-bold text-gray-900">$300</p>
+        </div>
+        <div class="rounded-lg border border-gray-200 bg-gray-50 p-6">
+          <p class="font-semibold text-navy mb-2">3rd Prize</p>
+          <p class="text-4xl font-bold text-gray-900">$200</p>
+        </div>
+      </div>
+      <p class="text-sm text-gray-500 mt-5">All award amounts are in USD.</p>
+    </div>
+  </section>
+
+  <!-- SPONSORS -->
+  <section id="sponsors" class="bg-gray-50 py-16 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-navy mb-4">Our Sponsors</h2>
+      <p class="text-gray-600 mb-8">Thank you to Sharpa and SOMA Robotics for supporting BiDexTool and our research community.</p>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <a href="https://www.sharpa.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center gap-5 rounded-lg border border-gray-200 bg-white p-8 hover:border-navy transition-colors">
+          <img src="assets/sponsors/sharpa.svg" alt="Sharpa" class="sponsor-logo" width="220" height="62" />
+          <span class="text-sm font-medium text-gray-600">Sharpa &nearr;</span>
+        </a>
+        <a href="https://somarobotics.ai/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center gap-5 rounded-lg border border-gray-200 bg-white p-8 hover:border-navy transition-colors">
+          <img src="assets/sponsors/soma.svg" alt="SOMA Robotics" class="sponsor-logo" width="220" height="62" />
+          <span class="text-sm font-medium text-gray-600">SOMA Robotics &nearr;</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -397,7 +443,7 @@
         </div>
 
         <div class="text-center">
-          <img src="https://i1.rgstatic.net/ii/profile.image/586082844438528-1516744447018_Q512/Nikolay-Atanasov-3.jpg"
+          <img src="assets/people/organizer-nikolay.jpg"
                alt="Nikolay Atanasov"
                class="w-20 h-20 rounded-full mx-auto mb-2 object-cover" />
           <a href="https://natanaso.github.io/" class="font-semibold text-gray-900 text-sm hover:text-navy hover:underline" target="_blank">Nikolay Atanasov</a>
