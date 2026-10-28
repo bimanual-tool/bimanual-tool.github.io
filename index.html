@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bimanual Dexterous Tool Use — CoRL 2026 Workshop</title>
-  <meta name="description" content="Last call for BiDexTool at CoRL 2026. Submission deadline extended to Monday, October 12, 2026. $1,000 in Best Paper Awards, supported by Sharpa and SOMA Robotics." />
+  <meta name="description" content="Explore 15 accepted papers, 7 spotlight orals, invited talks, and live demos at the BiDexTool CoRL 2026 workshop. Supported by Sharpa and SOMA Robotics, with $1,000 in Best Paper Awards." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -20,10 +20,8 @@
   </script>
   <style>
     html { scroll-behavior: smooth; }
-    section[id] { scroll-margin-top: 100px; }
+    section[id], #sponsors, article[id] { scroll-margin-top: 120px; }
     .sponsor-logo { width: 220px; height: 62px; object-fit: contain; max-width: 100%; }
-    .deadline-banner { border: 1px solid #bfdbfe; background: #eff6ff; border-radius: 12px; padding: 20px; margin: 0 0 32px; }
-    .deadline-banner strong { color: #1e3a8a; }
   </style>
 </head>
 <body class="font-sans text-gray-800 bg-white">
@@ -41,7 +39,7 @@
         <a href="#awards" class="hover:text-navy transition-colors">Awards</a>
         <a href="#sponsors" class="hover:text-navy transition-colors">Sponsors</a>
         <a href="#organizers" class="hover:text-navy transition-colors">Organizers</a>
-        <a href="#cfp" class="ml-2 px-3 py-1.5 rounded border border-navy text-navy hover:bg-navy hover:text-white transition-colors">Submit</a>
+        <a href="#accepted-papers" class="ml-2 px-3 py-1.5 rounded border border-navy text-navy hover:bg-navy hover:text-white transition-colors">Accepted Papers</a>
       </div>
     </div>
   </nav>
@@ -56,15 +54,31 @@
       <p class="text-xl md:text-2xl text-gray-500 font-light mb-2">
         From Contact-Rich Execution to Generalist Robot Intelligence
       </p>
-      <p class="text-base text-gray-400 mb-8">Austin, Texas, USA &bull; November 12 2026</p>
-      <div class="deadline-banner">
-        <p class="text-sm font-semibold uppercase tracking-widest text-navy mb-2">Last call · Deadline extended</p>
-        <p class="text-xl md:text-2xl font-bold text-gray-900">Submit by <time datetime="2026-10-12">Monday, October 12, 2026</time></p>
-        <p class="text-sm text-gray-600 mt-2">Papers &amp; demos · <a href="#awards" class="font-semibold text-navy underline">$1,000 in Best Paper Awards</a></p>
+      <p class="text-base font-medium text-gray-700 leading-relaxed mb-3">
+        Austin, Texas, USA &bull; <time datetime="2026-11-12">November 12, 2026</time>
+        <span class="block sm:inline"><span class="hidden sm:inline" aria-hidden="true">&bull; </span><span class="inline-block"><time datetime="08:30">8:30 AM</time>&ndash;<time datetime="12:30">12:30 PM</time> (local time)</span></span>
+      </p>
+      <p class="text-base font-medium text-gray-600 mb-2">JW Marriott Austin &bull; Room 303&ndash;304</p>
+      <p class="text-sm text-gray-500 mb-8">
+        110 East 2nd Street, Austin, TX 78701, USA
+        &middot; <a href="https://www.google.com/maps/search/?api=1&amp;query=JW+Marriott+Austin+110+East+2nd+Street+Austin+TX+78701" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline">Map &nearr;</a>
+      </p>
+      <div id="sponsors" role="region" aria-labelledby="sponsors-heading" class="mb-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
+        <h2 id="sponsors-heading" class="text-sm font-semibold uppercase tracking-widest text-navy mb-5">Our Sponsors</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <a href="https://www.sharpa.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center gap-3 rounded-lg border border-gray-200 bg-white p-5 hover:border-navy transition-colors">
+            <img src="assets/sponsors/sharpa.svg" alt="Sharpa" class="sponsor-logo" width="220" height="62" />
+            <span class="text-sm font-medium text-gray-600">Sharpa &nearr;</span>
+          </a>
+          <a href="https://somarobotics.ai/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center gap-3 rounded-lg border border-gray-200 bg-white p-5 hover:border-navy transition-colors">
+            <img src="assets/sponsors/soma.svg" alt="SOMA Robotics" class="sponsor-logo" width="220" height="62" />
+            <span class="text-sm font-medium text-gray-600">SOMA Robotics &nearr;</span>
+          </a>
+        </div>
       </div>
       <div class="flex justify-center gap-4 flex-wrap">
-        <a href="#cfp" class="px-6 py-3 rounded border-2 border-navy text-navy font-semibold hover:bg-navy hover:text-white transition-colors">
-          Call for Papers
+        <a href="#accepted-papers" class="px-6 py-3 rounded border-2 border-navy text-navy font-semibold hover:bg-navy hover:text-white transition-colors">
+          Accepted Papers
         </a>
         <a href="#schedule" class="px-6 py-3 rounded border-2 border-gray-300 text-gray-600 font-semibold hover:border-navy hover:text-navy transition-colors">
           Program
@@ -166,15 +180,6 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 
         <div class="text-center">
-          <img src="assets/people/speaker-yunfang.jpg"
-               alt="Yunfang Yang"
-               class="w-28 h-28 rounded-full mx-auto mb-3 object-cover" />
-          <a href="https://yunfangyang.weebly.com/" class="font-semibold text-gray-900 text-sm hover:text-navy hover:underline" target="_blank">Yunfang Yang</a>
-          <p class="text-sm text-gray-500">Sharpa</p>
-          <p class="text-sm text-gray-500">Head of US</p>
-        </div>
-
-        <div class="text-center">
           <img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=sCTJI-0AAAAJ&citpid=4"
                alt="Ankur Handa"
                class="w-28 h-28 rounded-full mx-auto mb-3 object-cover" />
@@ -190,6 +195,15 @@
           <a href="https://profiles.stanford.edu/c-karen-liu" class="font-semibold text-gray-900 text-sm hover:text-navy hover:underline" target="_blank">Karen Liu</a>
           <p class="text-sm text-gray-500">Stanford</p>
           <p class="text-sm text-gray-500">Professor</p>
+        </div>
+
+        <div class="text-center">
+          <img src="assets/people/speaker-yunfang.jpg"
+               alt="Yunfang Yang"
+               class="w-28 h-28 rounded-full mx-auto mb-3 object-cover" />
+          <a href="https://yunfangyang.weebly.com/" class="font-semibold text-gray-900 text-sm hover:text-navy hover:underline" target="_blank">Yunfang Yang</a>
+          <p class="text-sm text-gray-500">Sharpa</p>
+          <p class="text-sm text-gray-500">Head of US</p>
         </div>
 
         <div class="text-center">
@@ -215,6 +229,9 @@
         Each invited talk is 30 minutes, including Q&amp;A.
       </p>
       <p class="text-gray-500 text-center mb-8 text-sm leading-relaxed">
+        <span class="font-medium text-gray-700">Venue: JW Marriott Austin &bull; Room 303&ndash;304</span><br />
+        110 East 2nd Street, Austin, TX 78701, USA &middot;
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=JW+Marriott+Austin+110+East+2nd+Street+Austin+TX+78701" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline">Map &nearr;</a><br />
         All times are local to Austin. The schedule and speaker order are tentative.
       </p>
       <div class="overflow-hidden rounded-lg border border-gray-200">
@@ -240,7 +257,7 @@
             </tr>
             <tr class="bg-gray-50">
               <td class="px-4 sm:px-6 py-3 font-mono text-gray-500 sm:whitespace-nowrap align-top"><time class="whitespace-nowrap" datetime="09:40">9:40</time>&ndash;<wbr><time class="whitespace-nowrap" datetime="10:15">10:15 AM</time></td>
-              <td class="px-4 sm:px-6 py-3 text-gray-800">Spotlight Oral Presentations<span class="block text-xs text-gray-500 mt-1">7 presentations &times; 5 minutes</span></td>
+              <td class="px-4 sm:px-6 py-3 text-gray-800">Spotlight Oral Presentations<span class="block text-xs text-gray-500 mt-1">7 presentations &times; 5 minutes &middot; <a href="#spotlight-papers" class="text-navy underline">View papers</a></span></td>
             </tr>
             <tr class="bg-white">
               <td class="px-4 sm:px-6 py-3 font-mono text-gray-500 sm:whitespace-nowrap align-top"><time class="whitespace-nowrap" datetime="10:15">10:15</time>&ndash;<wbr><time class="whitespace-nowrap" datetime="10:50">10:50 AM</time></td>
@@ -272,10 +289,237 @@
     </div>
   </section>
 
+  <!-- ACCEPTED PAPERS -->
+  <section id="accepted-papers" class="bg-gray-50 py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-navy mb-5 text-center">Accepted Papers</h2>
+      <p class="text-gray-600 text-center text-sm leading-relaxed max-w-3xl mx-auto">
+        We are pleased to present 15 accepted papers. All accepted papers will be presented as posters;
+        seven will also give a 5-minute spotlight oral presentation.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 mt-6 mb-8 text-sm">
+        <a href="#spotlight-papers" class="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 font-semibold text-navy hover:border-navy">7 Spotlight Orals</a>
+        <a href="#poster-papers" class="rounded-full border border-gray-300 bg-white px-4 py-2 font-semibold text-gray-700 hover:border-navy hover:text-navy">8 Poster Presentations</a>
+      </div>
+      <div class="rounded-lg border border-gray-200 bg-white p-5 mb-8 text-sm text-gray-600 leading-relaxed">
+        <p><a href="#schedule" class="font-semibold text-navy underline">Spotlight orals: 9:40&ndash;10:15 AM</a> &middot; Poster &amp; demo session: 10:15&ndash;10:50 AM.</p>
+        <p class="mt-1">All times are local to Austin. The spotlight presentation order will be announced.</p>
+      </div>
+      <div id="spotlight-papers" class="scroll-mt-32 rounded-xl border border-blue-200 bg-white p-5 sm:p-8 mb-8">
+        <h3 class="text-xl font-semibold text-navy mb-2">Spotlight Orals</h3>
+        <p class="text-sm text-gray-500 mb-6">Seven selected papers, also presented in the poster session.</p>
+        <div class="divide-y divide-gray-200">
+          <article id="paper-3" data-presentation="spotlight" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-blue-50 text-navy border-blue-200 px-2.5 py-1 text-xs font-semibold">Spotlight Oral + Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=i6CyEGBDvz" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Youhui Wang, Yunzhu Li, Fei-Fei Li, Jiajun Wu, Huang Huang</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=i6CyEGBDvz" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library (PDF)">Paper PDF &nearr;</a>
+              <a href="https://dexagent1.github.io/" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Project website for DexAgent">Project website &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-5" data-presentation="spotlight" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-blue-50 text-navy border-blue-200 px-2.5 py-1 text-xs font-semibold">Spotlight Oral + Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=mpVXz1HpJo" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">T-Rex: Tactile-Reactive Dexterous Manipulation</a>
+            </h4>
+            <details class="mt-2 text-sm text-gray-600 leading-relaxed">
+              <summary class="cursor-pointer hover:text-navy">Dantong Niu, Zhuoyang Liu, Zekai Wang, et al. <span class="text-xs text-navy underline">Show all 34 authors</span></summary>
+              <p class="mt-2">Dantong Niu, Zhuoyang Liu, Zekai Wang, Boning Shao, Zhao-Heng Yin, Anirudh Pai, Yuvan Sharma, Stefano Saravalle, Ruijie Zheng, Jing Wang, Ryan Punamiya, Mengda Xu, Yuqi Xie, Yunfan Jiang, Letian Fu, Konstantinos Kallidromitis, Matteo Gioia, Junyi Zhang, Jiaxin Ge, Haiwen Feng, Fabio Galasso, Wei Zhan, David M. Chan, Yutong Bai, Roei Herzig, Jiahui Lei, Fei-Fei Li, Ken Goldberg, Jitendra Malik, Pieter Abbeel, Yuke Zhu, Danfei Xu, Jim (Linxi) Fan, Trevor Darrell</p>
+            </details>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=mpVXz1HpJo" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="T-Rex: Tactile-Reactive Dexterous Manipulation (PDF)">Paper PDF &nearr;</a>
+              <a href="https://tactile-reactive-dexterous.github.io/" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Project website for T-Rex">Project website &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-6" data-presentation="spotlight" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-blue-50 text-navy border-blue-200 px-2.5 py-1 text-xs font-semibold">Spotlight Oral + Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=T0tJ7r9ngz" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">EgoEngine: From Egocentric Human Videos to High-Fidelity Dexterous Robot Demonstrations</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Yangcen Liu, Shuo Cheng, Xinchen Yin, Woo Chul Shin, Alfred Cueva, Yiran Yang, Zhenyang Chen, Chuye Zhang, Danfei Xu</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=T0tJ7r9ngz" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="EgoEngine: From Egocentric Human Videos to High-Fidelity Dexterous Robot Demonstrations (PDF)">Paper PDF &nearr;</a>
+              <a href="https://egoengine.github.io/" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Project website for EgoEngine">Project website &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-10" data-presentation="spotlight" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-blue-50 text-navy border-blue-200 px-2.5 py-1 text-xs font-semibold">Spotlight Oral + Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=L8ZNPFRCZ6" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">Do as I Do: Dexterous Manipulation Data from Everyday Human Videos</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Bhawna Paliwal, Haritheja Etukuru, William Liang, Pieter Abbeel, Nur Muhammad Mahi Shafiullah, Jitendra Malik</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=L8ZNPFRCZ6" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Do as I Do: Dexterous Manipulation Data from Everyday Human Videos (PDF)">Paper PDF &nearr;</a>
+              <a href="https://do-as-i-do.com/" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Project website for Do as I Do">Project website &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-14" data-presentation="spotlight" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-blue-50 text-navy border-blue-200 px-2.5 py-1 text-xs font-semibold">Spotlight Oral + Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=asjnJuENIU" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Qiyang Yan, Yulin Liu, Akash Sharma, Haozhi Qi, Guanya Shi, Karen Liu</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=asjnJuENIU" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity (PDF)">Paper PDF &nearr;</a>
+              <a href="https://simduoreal.github.io/" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Project website for SimDuoReal">Project website &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-18" data-presentation="spotlight" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-blue-50 text-navy border-blue-200 px-2.5 py-1 text-xs font-semibold">Spotlight Oral + Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=4SKa7orodx" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">ToolCraft: Learning State-Changing Manipulation Skills For Robotic Tool Use</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Priyanka Mandikal, Shivin Dass, Roberto Martín-Martín, Kristen Grauman</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=4SKa7orodx" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="ToolCraft: Learning State-Changing Manipulation Skills For Robotic Tool Use (PDF)">Paper PDF &nearr;</a>
+              <a href="https://sites.google.com/view/toolcraft-robot" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Project website for ToolCraft">Project website &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-20" data-presentation="spotlight" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-blue-50 text-navy border-blue-200 px-2.5 py-1 text-xs font-semibold">Spotlight Oral + Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=IP9Q1QWrXw" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Zhi Cao, Yining Hong, Jiaolong Yang, Yejin Choi, Fei-Fei Li, Jiajun Wu, Huang Huang</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=IP9Q1QWrXw" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity (PDF)">Paper PDF &nearr;</a>
+              <a href="https://fact-1-0.github.io/" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Project website for FACT">Project website &nearr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div id="poster-papers" class="scroll-mt-32 rounded-xl border border-gray-200 bg-white p-5 sm:p-8">
+        <h3 class="text-xl font-semibold text-navy mb-2">Poster Presentations</h3>
+        <p class="text-sm text-gray-500 mb-6">Eight additional papers presented in the poster session.</p>
+        <div class="divide-y divide-gray-200">
+          <article id="paper-2" data-presentation="poster" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-gray-50 text-gray-600 border-gray-200 px-2.5 py-1 text-xs font-semibold">Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=I05jU8udEP" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">DCPPT: Domain-Conditioned Policies from Procedural Trajectories for Sim-to-Real Dexterous Tool Use</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Beining Han, Jia Deng</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=I05jU8udEP" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="DCPPT: Domain-Conditioned Policies from Procedural Trajectories for Sim-to-Real Dexterous Tool Use (PDF)">Paper PDF &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-4" data-presentation="poster" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-gray-50 text-gray-600 border-gray-200 px-2.5 py-1 text-xs font-semibold">Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=Vs8RZd3um3" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">Force-Modulated Dexterity: Unified Compliance for Contact-Rich Manipulation</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Ying Yuan, David Held, Jitendra Malik, Haozhi Qi</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=Vs8RZd3um3" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Force-Modulated Dexterity: Unified Compliance for Contact-Rich Manipulation (PDF)">Paper PDF &nearr;</a>
+              <a href="https://yingyuan0414.github.io/fomo-dex/" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Project website for Force-Modulated Dexterity">Project website &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-7" data-presentation="poster" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-gray-50 text-gray-600 border-gray-200 px-2.5 py-1 text-xs font-semibold">Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=cFnqo7WzDp" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">Predicting What Matters: interaction-Centric 4D World-Action Models</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Luoxin Ye, Baichuan Huang, Kai Gao, Ruolin Ye, Dylan Randle, Jeroen Vanbaar, Alan Yuille, Manikantan Nambi, Jose Barreiros</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=cFnqo7WzDp" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Predicting What Matters: interaction-Centric 4D World-Action Models (PDF)">Paper PDF &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-8" data-presentation="poster" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-gray-50 text-gray-600 border-gray-200 px-2.5 py-1 text-xs font-semibold">Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=qWftdCxMGI" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">Which Hand Was Late? Diagnosis for Robot Failure Recovery in Bimanual Tool Use</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Baptiste Bonin, Caro Strickland, Audrey Durand</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=qWftdCxMGI" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Which Hand Was Late? Diagnosis for Robot Failure Recovery in Bimanual Tool Use (PDF)">Paper PDF &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-11" data-presentation="poster" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-gray-50 text-gray-600 border-gray-200 px-2.5 py-1 text-xs font-semibold">Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=dF7PCZUolt" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Mohamed Elmoghany, Kehan Li, Ruoqu Chen, Tarun Chiruvolu, Shutong Zhang, Ryan Wang, Stephen Tian, Yaru Niu, Michelle Guo, Ding Zhao, Weiyu Liu, Mengdi Xu, Fei-Fei Li, Jiajun Wu</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=dF7PCZUolt" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use (PDF)">Paper PDF &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-16" data-presentation="poster" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-gray-50 text-gray-600 border-gray-200 px-2.5 py-1 text-xs font-semibold">Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=tQ2CYCT59j" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">Support-Switch Identification of Tool and Workpiece Compliance</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Shivam Gupta</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=tQ2CYCT59j" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Support-Switch Identification of Tool and Workpiece Compliance (PDF)">Paper PDF &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-17" data-presentation="poster" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-gray-50 text-gray-600 border-gray-200 px-2.5 py-1 text-xs font-semibold">Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=mHJaEPfnc4" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">One Skill Library, Many Tasks: Learning Long-Horizon Dexterous Manipulation</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Entong Su, Jiahe Lu, Abhishek Gupta</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=mHJaEPfnc4" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="One Skill Library, Many Tasks: Learning Long-Horizon Dexterous Manipulation (PDF)">Paper PDF &nearr;</a>
+            </div>
+          </article>
+          <article id="paper-19" data-presentation="poster" class="py-6 first:pt-0 last:pb-0">
+            <div class="flex items-center gap-3 flex-wrap mb-2">
+              <span class="rounded-full border bg-gray-50 text-gray-600 border-gray-200 px-2.5 py-1 text-xs font-semibold">Poster</span>
+            </div>
+            <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+              <a href="https://openreview.net/pdf?id=MHx8DARvE9" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">Needle in a Pixel: Learning Suture Needle Grasping on the da Vinci Surgical System from Stereo Vision</a>
+            </h4>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Daniel Zhu</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=MHx8DARvE9" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="Needle in a Pixel: Learning Suture Needle Grasping on the da Vinci Surgical System from Stereo Vision (PDF)">Paper PDF &nearr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CALL FOR PAPERS -->
   <section id="cfp" class="bg-gray-50 py-16 px-4">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-2xl font-bold text-navy mb-6">Call for Papers & Demos</h2>
+      <p class="rounded-lg border border-gray-200 bg-white p-4 text-sm text-gray-600 mb-6">
+        Submissions are closed. View the <a href="#accepted-papers" class="font-semibold text-navy underline">accepted papers</a>
+        and <a href="#schedule" class="font-semibold text-navy underline">workshop program</a>.
+        The call below is retained for reference.
+      </p>
       <p class="text-gray-700 leading-relaxed mb-6">
         We invite non-archival submissions on tool-mediated physical interaction, including
         bimanual and single-hand tool use across general, surgical, sports, musical, and household
@@ -301,17 +545,8 @@
         and a short video showing the proposed demonstration. At least one author of each accepted demo must attend the workshop in 
         person and present the system live.
       </p>
-      <div class="bg-white rounded-lg border border-gray-200 p-6 mb-8">
-        <h3 class="font-semibold text-gray-900 mb-3">Important Dates</h3>
-        <ul class="text-sm text-gray-600 space-y-2">
-          <li><span class="font-medium text-gray-800">Submission deadline extended:</span> <del class="text-gray-400">October 9</del> &rarr; <strong class="text-navy"><time datetime="2026-10-12">Monday, October 12, 2026</time></strong></li>
-          <li><span class="font-medium text-gray-800">Notification:</span> <time datetime="2026-10-18">October 18, 2026</time></li>
-          <li><span class="font-medium text-gray-800">Camera-ready:</span> <time datetime="2026-10-25">October 25, 2026</time></li>
-          <li><span class="font-medium text-gray-800">Workshop:</span> <time datetime="2026-11-12">November 12, 2026</time> · CoRL 2026, Austin, United States</li>
-        </ul>
-      </div>
-      <a href="https://openreview.net/group?id=robot-learning.org/CoRL/2026/Workshop/BiDexTool#tab-your-consoles" class="inline-block px-6 py-3 rounded border-2 border-navy text-navy font-semibold hover:bg-navy hover:text-white transition-colors">
-        Submit on OpenReview
+      <a href="https://openreview.net/group?id=robot-learning.org/CoRL/2026/Workshop/BiDexTool" class="inline-block px-6 py-3 rounded border-2 border-navy text-navy font-semibold hover:bg-navy hover:text-white transition-colors">
+        Workshop on OpenReview
       </a>
     </div>
   </section>
@@ -349,35 +584,20 @@
         <div class="rounded-lg border border-blue-200 bg-blue-50 p-6">
           <p class="font-semibold text-navy mb-2">1st Prize</p>
           <p class="text-4xl font-bold text-gray-900">$500</p>
+          <p class="mt-4 text-sm text-gray-600">Winning paper: <span class="font-semibold text-gray-800">TBD</span></p>
         </div>
         <div class="rounded-lg border border-gray-200 bg-gray-50 p-6">
           <p class="font-semibold text-navy mb-2">2nd Prize</p>
           <p class="text-4xl font-bold text-gray-900">$300</p>
+          <p class="mt-4 text-sm text-gray-600">Winning paper: <span class="font-semibold text-gray-800">TBD</span></p>
         </div>
         <div class="rounded-lg border border-gray-200 bg-gray-50 p-6">
           <p class="font-semibold text-navy mb-2">3rd Prize</p>
           <p class="text-4xl font-bold text-gray-900">$200</p>
+          <p class="mt-4 text-sm text-gray-600">Winning paper: <span class="font-semibold text-gray-800">TBD</span></p>
         </div>
       </div>
       <p class="text-sm text-gray-500 mt-5">All award amounts are in USD.</p>
-    </div>
-  </section>
-
-  <!-- SPONSORS -->
-  <section id="sponsors" class="bg-gray-50 py-16 px-4">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-2xl font-bold text-navy mb-4">Our Sponsors</h2>
-      <p class="text-gray-600 mb-8">Thank you to Sharpa and SOMA Robotics for supporting BiDexTool and our research community.</p>
-      <div class="grid sm:grid-cols-2 gap-6">
-        <a href="https://www.sharpa.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center gap-5 rounded-lg border border-gray-200 bg-white p-8 hover:border-navy transition-colors">
-          <img src="assets/sponsors/sharpa.svg" alt="Sharpa" class="sponsor-logo" width="220" height="62" />
-          <span class="text-sm font-medium text-gray-600">Sharpa &nearr;</span>
-        </a>
-        <a href="https://somarobotics.ai/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center gap-5 rounded-lg border border-gray-200 bg-white p-8 hover:border-navy transition-colors">
-          <img src="assets/sponsors/soma.svg" alt="SOMA Robotics" class="sponsor-logo" width="220" height="62" />
-          <span class="text-sm font-medium text-gray-600">SOMA Robotics &nearr;</span>
-        </a>
-      </div>
     </div>
   </section>
 
@@ -478,7 +698,7 @@
         <div class="text-center">
           <img src="assets/people/organizer-nikolay.jpg"
                alt="Nikolay Atanasov"
-               class="w-20 h-20 rounded-full mx-auto mb-2 object-cover" />
+               class="w-20 h-20 rounded-full mx-auto mb-2 object-cover object-top" />
           <a href="https://natanaso.github.io/" class="font-semibold text-gray-900 text-sm hover:text-navy hover:underline" target="_blank">Nikolay Atanasov</a>
           <p class="text-xs text-gray-500">UC San Diego</p>
         </div>
@@ -506,7 +726,7 @@
       <div class="flex gap-4">
         <a href="#overview" class="hover:text-white transition-colors">About</a>
         <a href="#speakers" class="hover:text-white transition-colors">Speakers</a>
-        <a href="#cfp" class="hover:text-white transition-colors">CFP</a>
+        <a href="#accepted-papers" class="hover:text-white transition-colors">Accepted Papers</a>
       </div>
     </div>
   </footer>
