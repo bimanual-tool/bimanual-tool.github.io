@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bimanual Dexterous Tool Use — CoRL 2026 Workshop</title>
-  <meta name="description" content="Explore 15 accepted papers, 7 spotlight orals, invited talks, and live demos at the BiDexTool CoRL 2026 workshop. Supported by Xynova, Origami Robotics, and SOMA Robotics, with $1,000 in Best Paper Awards." />
+  <meta name="description" content="BiDexTool CoRL 2026 Best Paper Awards: T-Rex (1st Prize), SimDuoReal (2nd Prize), and FACT (3rd Prize). Explore all 15 accepted papers and the workshop program. Supported by Xynova, Origami Robotics, and SOMA Robotics." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -22,6 +22,9 @@
     html { scroll-behavior: smooth; }
     section[id], #sponsors, article[id] { scroll-margin-top: 120px; }
     .sponsor-logo { width: 220px; height: 62px; object-fit: contain; max-width: 100%; }
+    .workshop-logo { display: block; width: auto; height: 148px; max-width: 100%; object-fit: contain; margin: 0 auto 24px; }
+    .nav-logo { width: 32px; height: 36px; object-fit: contain; flex-shrink: 0; }
+    @media (min-width: 768px) { .workshop-logo { height: 180px; } }
   </style>
 </head>
 <body class="font-sans text-gray-800 bg-white">
@@ -29,7 +32,10 @@
   <!-- NAV -->
   <nav id="navbar" class="sticky top-0 z-50 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <span class="font-semibold text-navy text-sm hidden md:block">BiDexTool</span>
+      <a href="#home" aria-label="BiDexTool home" class="font-semibold text-navy text-sm hidden md:flex items-center gap-2 mr-4 shrink-0">
+        <img src="assets/bidextool-logo.png" alt="" class="nav-logo" width="32" height="36" />
+        <span>BiDexTool</span>
+      </a>
       <div class="flex items-center gap-3 text-sm font-medium text-gray-600 flex-wrap justify-end">
         <a href="#overview" class="hover:text-navy transition-colors">About</a>
         <a href="#challenges" class="hover:text-navy transition-colors">Challenges</a>
@@ -45,8 +51,9 @@
   </nav>
 
   <!-- HERO -->
-  <section class="bg-white py-20 px-4 text-center">
+  <section id="home" class="bg-white py-20 px-4 text-center">
     <div class="max-w-3xl mx-auto">
+      <img src="assets/bidextool-logo.png" alt="BiDexTool mascot: two robotic hands holding and painting a duck" class="workshop-logo" width="1186" height="1327" fetchpriority="high" />
       <p class="text-sm font-semibold text-navy uppercase tracking-widest mb-4">CoRL 2026 Workshop</p>
       <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
         Bimanual Dexterous Tool Use
@@ -71,6 +78,10 @@
           Program
         </a>
       </div>
+      <p class="mt-6 text-sm text-gray-600 leading-relaxed">
+        <a href="#awards" class="font-semibold text-navy hover:underline">Best Paper Awards announced</a>:
+        T-Rex (1st), SimDuoReal (2nd), and FACT (3rd).
+      </p>
     </div>
   </section>
 
@@ -313,6 +324,7 @@
           <article id="paper-5" data-presentation="spotlight" class="py-6 first:pt-0 last:pb-0">
             <div class="flex items-center gap-3 flex-wrap mb-2">
               <span class="rounded-full border bg-blue-50 text-navy border-blue-200 px-2.5 py-1 text-xs font-semibold">Spotlight Oral + Poster</span>
+              <a href="#award-t-rex" class="rounded-full border border-amber-300 bg-amber-50 text-amber-900 px-2.5 py-1 text-xs font-semibold hover:underline">Best Paper Award &middot; 1st Prize</a>
             </div>
             <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
               <a href="https://openreview.net/pdf?id=mpVXz1HpJo" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">T-Rex: Tactile-Reactive Dexterous Manipulation</a>
@@ -355,6 +367,7 @@
           <article id="paper-14" data-presentation="spotlight" class="py-6 first:pt-0 last:pb-0">
             <div class="flex items-center gap-3 flex-wrap mb-2">
               <span class="rounded-full border bg-blue-50 text-navy border-blue-200 px-2.5 py-1 text-xs font-semibold">Spotlight Oral + Poster</span>
+              <a href="#award-simduoreal" class="rounded-full border border-slate-300 bg-slate-100 text-slate-700 px-2.5 py-1 text-xs font-semibold hover:underline">Best Paper Award &middot; 2nd Prize</a>
             </div>
             <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
               <a href="https://openreview.net/pdf?id=asjnJuENIU" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity</a>
@@ -381,6 +394,7 @@
           <article id="paper-20" data-presentation="spotlight" class="py-6 first:pt-0 last:pb-0">
             <div class="flex items-center gap-3 flex-wrap mb-2">
               <span class="rounded-full border bg-blue-50 text-navy border-blue-200 px-2.5 py-1 text-xs font-semibold">Spotlight Oral + Poster</span>
+              <a href="#award-fact" class="rounded-full border border-orange-200 bg-orange-50 text-orange-900 px-2.5 py-1 text-xs font-semibold hover:underline">Best Paper Award &middot; 3rd Prize</a>
             </div>
             <h4 class="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
               <a href="https://openreview.net/pdf?id=IP9Q1QWrXw" target="_blank" rel="noopener noreferrer" class="hover:text-navy hover:underline">FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity</a>
@@ -564,28 +578,56 @@
   </section>
 
   <!-- AWARDS -->
-  <section id="awards" class="bg-white py-16 px-4">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-2xl font-bold text-navy mb-4">Best Paper Awards</h2>
-      <p class="text-gray-600 mb-8">$1,000 in paper awards.</p>
-      <div class="grid sm:grid-cols-3 gap-4">
-        <div class="rounded-lg border border-blue-200 bg-blue-50 p-6">
-          <p class="font-semibold text-navy mb-2">1st Prize</p>
-          <p class="text-4xl font-bold text-gray-900">$500</p>
-          <p class="mt-4 text-sm text-gray-600">Winning paper: <span class="font-semibold text-gray-800">TBD</span></p>
-        </div>
-        <div class="rounded-lg border border-gray-200 bg-gray-50 p-6">
-          <p class="font-semibold text-navy mb-2">2nd Prize</p>
-          <p class="text-4xl font-bold text-gray-900">$300</p>
-          <p class="mt-4 text-sm text-gray-600">Winning paper: <span class="font-semibold text-gray-800">TBD</span></p>
-        </div>
-        <div class="rounded-lg border border-gray-200 bg-gray-50 p-6">
-          <p class="font-semibold text-navy mb-2">3rd Prize</p>
-          <p class="text-4xl font-bold text-gray-900">$200</p>
-          <p class="mt-4 text-sm text-gray-600">Winning paper: <span class="font-semibold text-gray-800">TBD</span></p>
-        </div>
+  <section id="awards" aria-labelledby="awards-heading" class="bg-white py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 id="awards-heading" class="text-2xl font-bold text-navy mb-4 text-center">Best Paper Awards</h2>
+      <p class="text-gray-600 mb-2 text-center">Congratulations to our three award-winning papers!</p>
+      <p class="text-sm text-gray-500 mb-8 text-center">Presented on November 12, 2026 &middot; $1,000 in awards, generously sponsored by <a href="https://xynova.ai/" target="_blank" rel="noopener noreferrer" class="font-semibold text-navy hover:underline">Xynova</a>.</p>
+      <div class="space-y-4">
+        <article id="award-t-rex" class="rounded-xl border border-amber-300 bg-amber-50 p-5 sm:p-7 flex flex-col sm:flex-row gap-4 sm:gap-8">
+          <div class="sm:w-28 sm:shrink-0">
+            <p class="font-semibold text-amber-900 mb-1">1st Prize</p>
+            <p class="text-3xl font-bold text-gray-900">$500</p>
+          </div>
+          <div class="min-w-0">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 leading-snug"><a href="#paper-5" class="hover:text-navy hover:underline">T-Rex: Tactile-Reactive Dexterous Manipulation</a></h3>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Dantong Niu, Zhuoyang Liu, Zekai Wang, et al. <a href="#paper-5" class="text-navy underline">View all 34 authors</a></p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=mpVXz1HpJo" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="T-Rex award-winning paper (PDF)">Paper PDF &nearr;</a>
+              <a href="https://tactile-reactive-dexterous.github.io/" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="T-Rex project website">Project website &nearr;</a>
+            </div>
+          </div>
+        </article>
+        <article id="award-simduoreal" class="rounded-xl border border-slate-300 bg-slate-50 p-5 sm:p-7 flex flex-col sm:flex-row gap-4 sm:gap-8">
+          <div class="sm:w-28 sm:shrink-0">
+            <p class="font-semibold text-slate-700 mb-1">2nd Prize</p>
+            <p class="text-3xl font-bold text-gray-900">$300</p>
+          </div>
+          <div class="min-w-0">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 leading-snug"><a href="#paper-14" class="hover:text-navy hover:underline">SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity</a></h3>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Qiyang Yan, Yulin Liu, Akash Sharma, Haozhi Qi, Guanya Shi, Karen Liu</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=asjnJuENIU" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="SimDuoReal award-winning paper (PDF)">Paper PDF &nearr;</a>
+              <a href="https://simduoreal.github.io/" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="SimDuoReal project website">Project website &nearr;</a>
+            </div>
+          </div>
+        </article>
+        <article id="award-fact" class="rounded-xl border border-orange-200 bg-orange-50 p-5 sm:p-7 flex flex-col sm:flex-row gap-4 sm:gap-8">
+          <div class="sm:w-28 sm:shrink-0">
+            <p class="font-semibold text-orange-900 mb-1">3rd Prize</p>
+            <p class="text-3xl font-bold text-gray-900">$200</p>
+          </div>
+          <div class="min-w-0">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 leading-snug"><a href="#paper-20" class="hover:text-navy hover:underline">FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity</a></h3>
+            <p class="mt-2 text-sm text-gray-600 leading-relaxed">Zhi Cao, Yining Hong, Jiaolong Yang, Yejin Choi, Fei-Fei Li, Jiajun Wu, Huang Huang</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 mt-3 text-sm">
+              <a href="https://openreview.net/pdf?id=IP9Q1QWrXw" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="FACT award-winning paper (PDF)">Paper PDF &nearr;</a>
+              <a href="https://fact-1-0.github.io/" target="_blank" rel="noopener noreferrer" class="font-medium text-navy hover:underline" aria-label="FACT project website">Project website &nearr;</a>
+            </div>
+          </div>
+        </article>
       </div>
-      <p class="text-sm text-gray-500 mt-5">All award amounts are in USD.</p>
+      <p class="text-sm text-gray-500 mt-5 text-center">All award amounts are in USD.</p>
     </div>
   </section>
 
