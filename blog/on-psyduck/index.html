@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>On Psyduck | 论·可达鸭 - Runfa Blark Li | BiDexTool 2026</title>
+<meta name="description" content="Two hands, a paintbrush, and a few questions from CoRL 2026. Runfa Blark Li reflects on generalization, contact, and the future of dexterous tool use.">
+<meta name="author" content="Runfa Blark Li 李润发">
+<meta name="theme-color" content="#fffdfa">
+<link rel="canonical" href="https://bimanual-tool.github.io/blog/on-psyduck/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="On Psyduck | 论·可达鸭">
+<meta property="article:published_time" content="2026-11-17">
+<meta property="og:description" content="Two hands, a paintbrush, and a few questions from CoRL 2026.">
+<meta property="og:url" content="https://bimanual-tool.github.io/blog/on-psyduck/">
+<meta property="og:site_name" content="BiDexTool · CoRL 2026">
+<meta property="og:image" content="https://bimanual-tool.github.io/assets/on-psyduck-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="On Psyduck / 论·可达鸭 — a BiDexTool workshop reflection, with the two-handed Psyduck painting mascot.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="On Psyduck | 论·可达鸭">
+<meta name="twitter:description" content="A workshop reflection by Runfa Blark Li: two hands, a paintbrush, and a few questions from CoRL 2026.">
+<meta name="twitter:image" content="https://bimanual-tool.github.io/assets/on-psyduck-social.png">
+<meta name="twitter:image:alt" content="On Psyduck / 论·可达鸭 — BiDexTool at CoRL 2026, with the workshop mascot.">
+<style>
+:root{color-scheme:light;--ink:#20252e;--muted:#626975;--navy:#1e3a8a;--line:#e6e7e9;--paper:#fffdfa;--accent:#e9b83b}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:36px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;-webkit-font-smoothing:antialiased}
+a{color:var(--navy);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{text-decoration-color:var(--accent)}a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px;border-radius:2px}
+.site-nav{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:1060px;margin:auto;padding:23px 32px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px}
+.site-nav a{text-decoration:none;font-weight:600}.site-nav span{color:var(--muted)}
+main{max-width:764px;margin:0 auto;padding:58px 32px 72px}
+.article-header{text-align:center}.eyebrow{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:11px;color:var(--navy);font-weight:650;margin:0 0 18px}
+h1{font-size:clamp(48px,8vw,70px);font-weight:500;letter-spacing:-.045em;line-height:1.07;margin:0 0 18px}.subtitle{font-size:19px;color:#4c5361;line-height:1.5;margin:0 auto 19px;max-width:550px}
+.chinese-title{display:block;font-family:"Noto Serif CJK SC","Songti SC",SimSun,serif;font-size:.46em;letter-spacing:.09em;line-height:1.35;margin-top:.38em}
+.byline{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:13px;color:var(--muted);line-height:1.8;margin:0}.byline a{color:var(--ink);text-decoration:none;white-space:nowrap}.byline .author-chinese{font-size:.95em;margin-left:.35em}.byline .dot{padding:0 8px}.byline time{white-space:nowrap}
+.logo-figure{margin:32px auto 38px;text-align:center}.logo-figure img{display:block;width:240px;max-width:65%;height:auto;margin:auto}
+.recording-links{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;font-size:14px;line-height:1.7;margin:0 0 34px;padding:16px 18px;background:#f4f5f7;border:1px solid var(--line);border-radius:8px}.recording-links strong{display:block;margin-bottom:8px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.recording-links a{display:inline-block;padding:7px 16px;border:1px solid #cbd3e1;border-radius:5px;background:#fff;text-decoration:none;font-weight:600}.recording-links a:hover{border-color:var(--navy);background:#eef2fa}
+.article-body{font-size:19px;line-height:1.8}.article-body p{margin:0 0 22px}.article-body>p:first-child{font-size:21px;line-height:1.75}
+h2{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:26px;line-height:1.35;letter-spacing:-.025em;font-weight:650;margin:54px 0 22px;color:#172942;text-wrap:balance}
+hr{border:0;border-top:1px solid var(--line);margin:42px 0}strong{font-weight:700}
+.citation{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:11px;line-height:0;vertical-align:super;white-space:nowrap;margin-left:2px}.citation a{text-decoration:none}
+.cliffhanger{border-left:3px solid var(--accent);padding:6px 0 6px 23px;margin:30px 0;font-size:25px;line-height:1.55;color:#172942}
+.references{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:13px;line-height:1.75;border-top:1px solid var(--line);padding-top:14px;margin-top:48px}.references h2{font-size:21px;margin-top:24px}
+.references p{margin-bottom:17px}.references .time{display:block;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:2px}
+.reference-entry:target{background:#fff0bf;outline:8px solid #fff0bf;border-radius:2px}
+.editing-credit{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:12px;color:var(--muted);line-height:1.7;margin-top:34px}
+footer{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding-top:20px;margin-top:30px}
+@media(max-width:540px){.site-nav{padding:18px 22px;font-size:12px}.site-nav span{display:none}main{padding:38px 23px 48px}.article-body{font-size:18px;line-height:1.8}.article-body>p:first-child{font-size:19px}.subtitle{font-size:17px}h2{font-size:23px;margin-top:42px}.logo-figure img{width:195px}.logo-figure{margin:28px auto 30px}.cliffhanger{font-size:22px;padding-left:18px}footer{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body{background:#fff}main{max-width:none;padding:0}.site-nav,footer{display:none}.logo-figure img{width:150px}.article-body{font-size:11pt;line-height:1.6}h1{font-size:36pt}h2{font-size:16pt;break-after:avoid}.references{font-size:9pt}.cliffhanger{font-size:15pt}a{color:inherit}.reference-entry{break-inside:avoid}}
+</style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Workshop navigation">
+<a href="../../index.html">← BiDexTool workshop</a>
+<span>CoRL 2026 · Austin</span>
+<a href="#references-and-timestamps">References</a>
+</nav>
+<main id="top">
+<article>
+<header class="article-header">
+<p class="eyebrow">A workshop reflection</p>
+<h1>On Psyduck<span class="chinese-title" lang="zh-Hans">论·可达鸭</span></h1>
+<p class="subtitle">Two hands, a paintbrush, and a few questions from CoRL 2026</p>
+<p class="byline"><a href="https://blarklee.github.io/">Runfa Blark Li <span class="author-chinese" lang="zh-Hans">李润发</span></a><span class="dot">·</span><time datetime="2026-11-17">November 17, 2026</time></p>
+</header>
+<figure class="logo-figure">
+<img src="../../assets/bidextool-logo.png" width="1186" height="1327" alt="BiDexTool logo: two robotic hands holding and painting a Psyduck figurine" fetchpriority="high">
+</figure>
+<nav class="recording-links" aria-label="Full workshop recording"><strong>Full workshop recording:</strong> <a href="https://youtu.be/HNI-dcrl54I">YouTube</a> · <a href="https://www.bilibili.com/video/BV1EVsu6QE5n/">Bilibili</a></nav>
+<div class="article-body">
+<p>On November 12, I helped organize and hosted the BiDexTool workshop at CoRL in Austin. I started with our logo: one robotic hand holding a Psyduck figurine, the other painting it with a brush.</p>
+<p>I made the image with ChatGPT. Then I asked the room to imagine doing it with a real robot, a real figurine, and a real brush.</p>
+<p>That is where the questions begin.</p>
+<p>One hand needs to hold Psyduck without dropping it. It also needs to turn the figurine so the brush can reach the next surface. The other hand needs to move the brush at the right angle and press with the right amount of force. As the figurine turns, the brush has to adjust.</p>
+<p>This was a convenient way to introduce the three words in our workshop&#x27;s name: bimanual, dexterous, and tool use. Two hands coordinate. Fingers adjust the grip. A tool lets the robot do something to the object. <sup class="citation"><a href="#ref-1" aria-label="Reference 1">[1]</a></sup></p>
+<p>Now suppose we get all of that working. We hand the robot a softer brush.</p>
+<p>How much of what it learned is still useful?</p>
+<p>That question connects much of what we discussed during the workshop. Below are a few thoughts from the talks and panel, organized around the questions I am still thinking about.</p>
+<h2 id="what-counts-as-a-useful-skill">What counts as a useful skill?</h2>
+<p>I started the panel by asking Jitendra Malik what would convince him that a robot had learned a general ability to use tools with both hands. He emphasized robustness, generalization, and speed. <sup class="citation"><a href="#ref-2" aria-label="Reference 2">[2]</a></sup></p>
+<p>These are related, but they ask different things. Does the robot succeed repeatedly? Does it still succeed when we change the tool or the task? And how long does it take?</p>
+<p>The last question is easy to overlook. If a robot completes a task but takes ten times longer than a person, that matters to anyone considering using it. Reporting success rates without execution time leaves out an important part of the result.</p>
+<p>The discussion then raised a question I particularly liked: how much practice does the robot need for the next object? <sup class="citation"><a href="#ref-2" aria-label="Reference 2">[2]</a></sup></p>
+<p>We often test whether a trained robot can immediately handle something new. That is useful. But we could also let it practice, then measure how quickly it improves. A robot that needs a few attempts with a new tool has learned something different from one that needs another week of training.</p>
+<p>For our painting example, I would want to know whether the softer brush works on the first attempt. If it doesn&#x27;t, how much practice does the robot need? Does experience with the first brush make learning the second one easier?</p>
+<p>An audience member brought up a familiar experience: being good at something with the right hand, then finding it surprisingly difficult with the left. The discussion turned to the difference between knowing how a task works and having the motor skill to perform it. <sup class="citation"><a href="#ref-3" aria-label="Reference 3">[3]</a></sup></p>
+<p>That distinction is useful for robots too. The steps for painting a figurine could stay the same when we change the robot&#x27;s hand. The finger movements and forces may need to change considerably.</p>
+<p>So when we say a skill transfers, we should explain what transferred and what still had to be learned. I would count faster learning on the new hand as progress too, provided we measure how much faster.</p>
+<h2 id="what-should-a-planner-tell-a-controller">What should a planner tell a controller?</h2>
+<p>This brings me to the part of the workshop I found especially interesting: what information should pass from a planner to a controller?</p>
+<p>A planner decides what should happen next. A controller takes that request, observes what the robot is doing, and produces the movements needed to carry it out. Those descriptions sound straightforward. The difficult part is deciding how much detail belongs in the request.</p>
+<p>In her talk, Karen Liu argued for object-centric plans. For example, specify where an object should move and how it should turn. Let a learned controller, often called a policy, work out the arm and finger movements needed to make that happen. <sup class="citation"><a href="#ref-4" aria-label="Reference 4">[4]</a></sup></p>
+<p>Jitendra described a planner that calls learned skills, such as picking or inserting. The planner asks for a skill, and the policy handles its physical execution. In the discussion after his talk, he also considered language and visual examples as ways of communicating the request. <sup class="citation"><a href="#ref-5" aria-label="Reference 5">[5]</a></sup></p>
+<p>To see the difference, imagine giving our painting robot one of three instructions. We could tell it which patch to paint. We could give it a path for the brush tip. Or we could specify a sequence of wrist and finger poses.</p>
+<p>Each instruction leaves different decisions to the controller. A path for the brush tip still leaves room to choose how to hold the brush. A sequence of finger poses makes more of that choice in advance. An instruction to paint a patch leaves the controller to decide on the strokes as well.</p>
+<p>This is why I don&#x27;t think saying “we use a hierarchy” tells us very much on its own. We still need to explain what each part is responsible for.</p>
+<p>During the panel, I brought up Nima Fazeli&#x27;s idea of a “SONIC for contact,” which he had mentioned earlier in the week. In the motion-tracking setup we were discussing, a controller follows a supplied sequence of poses. I asked what the equivalent might be for manipulation involving contact.</p>
+<p>Nima&#x27;s answer emphasized the appeal of a reusable dexterous policy. The discussion then turned to a challenge: do we need to give that policy a reference trajectory at all? Could we give it a goal or a skill instruction and let it choose the motion? <sup class="citation"><a href="#ref-6" aria-label="Reference 6">[6]</a></sup></p>
+<p>I think both questions deserve attention. We want a controller that can be reused across tasks. We also need to decide what it should be asked to follow.</p>
+<p>For painting, a path alone may not specify how hard the brush should press. A force target alone does not say where to paint. And if the brush bends differently from what we expected, the robot needs to adjust while it works.</p>
+<p>A reference does not have to stay fixed throughout execution. The planner could observe a missed patch and change the next stroke. Meanwhile, the controller could adjust its movements to keep the brush in contact. Both parts would be responding to what actually happened.</p>
+<p>But that still leaves the design question: should the planner send a new path, an object target, a desired contact, or something else?</p>
+<p>The workshop gave us several possibilities. It also gave us reasons to test them carefully. I would want to know which instructions a controller can follow reliably, and how much new training it needs when we change the task.</p>
+<h2 id="what-do-we-need-to-sense-and-simulate">What do we need to sense and simulate?</h2>
+<p>A controller can only respond to a problem if it has enough information to notice it.</p>
+<p>In our painting example, the fingers touch the handle, while the bristles touch the figurine. The robot might be holding the brush securely and still be pressing too hard, missing the surface, or making the wrong stroke.</p>
+<p>I asked Nima about this separation between the hand and the tool tip. His response covered tactile sensing, simulation, and the mechanics of the hand itself.</p>
+<p>One question was how much detail a tactile sensor needs to capture for a particular task. More detailed sensing can add hardware complexity. It would be useful to test which differences in sensing actually change what the robot can do.</p>
+<p>Another issue was the mechanism between the motor and the fingers. Friction and looseness in that mechanism can affect the hand&#x27;s response. A simulator that misses those effects may teach a policy to expect movements the real hand does not produce. <sup class="citation"><a href="#ref-7" aria-label="Reference 7">[7]</a></sup></p>
+<p>The discussion of slip made the connection to control more concrete. Suppose the brush begins to move inside the fingers. The robot might need to tighten its grip, reposition the brush, or stop the stroke. The useful response depends on the task and on how much time remains before the brush slips out. <sup class="citation"><a href="#ref-8" aria-label="Reference 8">[8]</a></sup></p>
+<p>So I would start with the decision we want the robot to make. Then I would ask what it needs to observe to make that decision in time.</p>
+<p>Simulation also has to give the robot useful opportunities to learn. Ankur Handa pointed to interactions that remain difficult to simulate accurately, such as insertion with very small clearances. He also raised the problem of exploration: even in a good simulator, the robot may struggle to discover movements that make progress. Human demonstrations or other prior experience can help it get started.</p>
+<p>When I asked what he would improve in simulators, Ankur emphasized accuracy. That led to a discussion of using more compute to maintain large-scale training while improving the physics. <sup class="citation"><a href="#ref-9" aria-label="Reference 9">[9]</a></sup></p>
+<p>I would like to see those improvements judged by what happens on the real robot. Does a more accurate model of the hand reduce failures? Does a better contact model help with a new tool? How much real-world practice is still needed?</p>
+<p>Those questions connect simulator development to the behavior we want to improve.</p>
+<h2 id="where-should-we-invest-hardware-learning-or-both">Where should we invest: hardware, learning, or both?</h2>
+<p>I asked the panel to imagine having one year and a fixed budget to make a robot use unfamiliar tools reliably. What would they invest in first? <sup class="citation"><a href="#ref-10" aria-label="Reference 10">[10]</a></sup></p>
+<p>Alex Xia chose hardware, particularly reliability and consistency. His earlier talk had described problems with transmission wear, heat, and force control. <sup class="citation"><a href="#ref-11" aria-label="Reference 11">[11]</a></sup> These are practical concerns for anyone who wants a hand to keep working over many experiments.</p>
+<p>Other answers put more weight on pretraining and compute. There was also a case for improving hardware and learning together. <sup class="citation"><a href="#ref-10" aria-label="Reference 10">[10]</a></sup></p>
+<p>The disagreement makes sense to me. If the hand behaves differently from one run to the next, improving its consistency could make both training and execution easier. If a policy can learn to handle that variation, investing in learning might achieve more with the hardware we already have.</p>
+<p>We can test how far that second argument goes. Take a policy that works on one hand and give it another. How much does performance drop? How much additional experience does it need to recover? Repeat after the mechanics have changed through wear.</p>
+<p>In the closing round, Alex described evidence that would change his view: a model working well with unfamiliar or less reliable hardware, with little or no additional training. <sup class="citation"><a href="#ref-12" aria-label="Reference 12">[12]</a></sup></p>
+<p>The audience also asked a related question: with simple grippers already doing impressive things, what makes dexterous hands worth the added complexity?</p>
+<p>The discussion brought up using a tool while operating its trigger, holding more than one object, and changing an object&#x27;s position inside the hand. These examples helped explain where additional fingers could be useful. <sup class="citation"><a href="#ref-13" aria-label="Reference 13">[13]</a></sup> The value depends on what we want the robot to do.</p>
+<p>For the painting task, we could hold the figurine in a fixture and use a simple gripper for the brush. Giving the robot another hand lets it reposition the figurine itself. Fingers give it more ways to change its grip. Those options may help, but they also make the system harder to build and train.</p>
+<p>I think a convincing demonstration should show what the extra capability buys us.</p>
+<h2 id="what-experiments-would-change-our-minds">What experiments would change our minds?</h2>
+<p>We ended the panel by asking what experiment people wanted the community to run next.</p>
+<p>One proposal was to train policies in several simulators and compare their performance on real hardware. That would help identify which differences between simulators matter in practice. To interpret the results, I would also want to know how much compute and tuning each setup received.</p>
+<p>Another proposal was to evaluate AI agents across a range of robotic skills, with numbers for generality, speed, and accuracy. An agent might make it much easier to write training code or assemble an existing system. We should then measure how well the resulting robot performs.</p>
+<p>There were also calls to measure adaptation more carefully and to report how often a system successfully completes useful work. <sup class="citation"><a href="#ref-12" aria-label="Reference 12">[12]</a></sup></p>
+<p>My own version of these experiments would return to Psyduck.</p>
+<p>Start with a robot that can paint the figurine. Give it a softer brush and measure the quality and speed of its first attempt. Let it practice, and record how much experience it needs to improve. Then swap Psyduck for Pikachu. Later, try a different hand.</p>
+<p>After each change, test the earlier setup again. We would want to know whether learning something new damaged a skill the robot already had.</p>
+<p>This is an experiment I am proposing here, inspired by the discussion. It would give us a concrete way to compare the choices we debated: instructions, feedback, training methods, simulation, and hardware.</p>
+<p>I would be happy to see a robot paint one Psyduck well. I would learn much more from watching what happens when we change its brush.</p>
+<hr>
+<p>Thank you to our speakers and panelists—Alex Xia, Karen Liu, Jitendra Malik, Ankur Handa, and Nima Fazeli—and to our authors, reviewers, volunteers, and everyone who joined the discussion. Thank you to Xynova, Origami Robotics, and SOMA Robotics for supporting the workshop.</p>
+<p>I organized the workshop with Yunhai Han, Haonan Chen, Jiaheng Hu, Yuxiang Ma, Nicklas Hansen, Toru Lin, Weizhe Ni, Xianyi Cheng, Jiajun Wu, Nima Fazeli, and Nikolay Atanasov.</p>
+<p>Congratulations to our best paper award winners: <strong>T-Rex</strong> (first prize), <strong>SimDuoReal</strong> (second prize), and <strong>FACT</strong> (third prize). <sup class="citation"><a href="#ref-14" aria-label="Reference 14">[14]</a></sup> The <a href="https://bimanual-tool.github.io/">workshop website</a> has the program, papers, and award details.</p>
+<h2 id="one-question-for-later">One question for later</h2>
+<p>While preparing the workshop, I kept wondering whether someone would ask why I, personally, was so set on putting bimanual manipulation, dexterous hands, and tool use together.</p>
+<p>There are good research reasons, and I&#x27;ve spent most of this post discussing them. I also have a more personal reason that I&#x27;m not ready to share yet.</p>
+<p>There is also the small matter of whose idea of a well-painted Psyduck we are aiming for.</p>
+<p>Had someone asked me that version of the question, my answer would probably have been:</p>
+<blockquote class="cliffhanger">“Ask me again in three years. I&#x27;d like to show you why.”</blockquote>
+<p>So I&#x27;m leaving this paragraph here, with a date on it. If things go well, I&#x27;d like to come back and explain.</p>
+<p><em>(The only part of this post with absolutely no AI editing. Yes, this one matters.)</em></p>
+<p>For now, Psyduck is keeping quiet.</p>
+<section class="references" aria-labelledby="references-and-timestamps">
+<h2 id="references-and-timestamps">References and timestamps</h2>
+<p>Times are positions in the full workshop recording, written as hours:minutes:seconds. Watch on <a href="https://youtu.be/HNI-dcrl54I">YouTube</a> or <a href="https://www.bilibili.com/video/BV1EVsu6QE5n/">Bilibili</a>.</p>
+<p class="reference-entry" id="ref-1"><strong>[1] Opening example.</strong><span class="time">00:00:00–00:05:31.</span></p>
+<p class="reference-entry" id="ref-2"><strong>[2] Robustness, generalization, speed, and practice with a new object.</strong><span class="time">02:49:04–02:53:28.</span></p>
+<p class="reference-entry" id="ref-3"><strong>[3] Right/left hand transfer and adaptation.</strong><span class="time">03:15:54–03:21:40.</span></p>
+<p class="reference-entry" id="ref-4"><strong>[4] Karen Liu: object-centric plans and alternative interfaces.</strong><span class="time">00:35:28–00:40:49; 00:58:21–01:02:50.</span></p>
+<p class="reference-entry" id="ref-5"><strong>[5] Jitendra Malik: skills, feedback, language, and visual instructions.</strong><span class="time">02:12:25–02:17:27; 02:19:28–02:21:22.</span></p>
+<p class="reference-entry" id="ref-6"><strong>[6] SONIC for contact and controller interfaces.</strong><span class="time">03:03:57–03:07:45.</span></p>
+<p class="reference-entry" id="ref-7"><strong>[7] Nima Fazeli: sensing resolution and transmission modeling.</strong><span class="time">03:00:57–03:03:49.</span></p>
+<p class="reference-entry" id="ref-8"><strong>[8] Slip and the robot&#x27;s response.</strong><span class="time">03:13:05–03:15:13.</span></p>
+<p class="reference-entry" id="ref-9"><strong>[9] Simulation accuracy and exploration.</strong><span class="time">02:57:14–03:00:45.</span></p>
+<p class="reference-entry" id="ref-10"><strong>[10] Where to invest: hardware, pretraining, and compute.</strong><span class="time">03:07:51–03:12:34.</span></p>
+<p class="reference-entry" id="ref-11"><strong>[11] Alex Xia: hardware challenges and transmission wear.</strong><span class="time">00:11:53–00:14:45.</span></p>
+<p class="reference-entry" id="ref-12"><strong>[12] Proposed experiments and evidence that could change views.</strong><span class="time">03:29:04–03:34:00.</span></p>
+<p class="reference-entry" id="ref-13"><strong>[13] Why dexterous hands: tool operation and in-hand manipulation.</strong><span class="time">03:22:04–03:28:56.</span></p>
+<p class="reference-entry" id="ref-14"><strong>[14] Best paper awards.</strong><span class="time">03:34:40–03:36:07.</span></p>
+</section>
+<p class="editing-credit">Editing assistance: GPT-6 Astra.</p>
+</div>
+</article>
+<footer><span>BiDexTool · CoRL 2026</span><a href="#top">Back to top ↑</a></footer>
+</main>
+</body>
+</html>
